@@ -1,0 +1,112 @@
+.App-header {
+  background-color: #edf4ff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.buttonName {
+  background: blueviolet;
+  border: none;
+  padding: 8px 15px;
+}
+
+.buttonName:hover {
+  background-color: white;
+  border: 1px solid blueviolet;
+  color: blueviolet;
+}
+
+.addSegmentHeading {
+  color: blueviolet;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.modal-header {
+  border-bottom: none !important;
+}
+
+.modal-footer {
+  border-top: none !important;
+}
+
+.finalOutput {
+  font-size: 15px;
+  color: black;
+}
+
+/* InputField CSS */
+
+.label-float {
+  position: relative;
+  padding-top: 13px;
+}
+
+.label-float input {
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: all .1s linear;
+  -webkit-transition: all .1s linear;
+  -moz-transition: all .1s linear;
+}
+
+.label-float select {
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: all .1s linear;
+  -webkit-transition: all .1s linear;
+  -moz-transition: all .1s linear;
+}
+
+.label-float input:focus {
+  border: 2px solid blueviolet;
+}
+
+.label-float input::placeholder {
+  color: transparent;
+}
+
+.label-float label {
+  pointer-events: none;
+  position: absolute;
+  top: calc(50% - 12px);
+  left: 15px;
+  transition: all .1s linear;
+  -webkit-transition: all .1s linear;
+  -moz-transition: all .1s linear;
+  background-color: white;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+/* .label-float input:required:invalid+label {
+  color: red;
+}
+
+.label-float input:focus:required:invalid {
+  border: 2px solid red;
+}
+
+.label-float input:required:invalid+label:before {
+  content: '*';
+} */
+
+.label-float input:focus+label,
+.label-float input:not(:placeholder-shown)+label {
+  font-size: 13px;
+  top: 0;
+  color: blueviolet;
+}
